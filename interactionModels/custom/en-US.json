@@ -1,0 +1,78 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "corona reporter",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "CoronaByCountryIntent",
+          "slots": [
+            {
+              "name": "country",
+              "type": "AMAZON.Country",
+              "samples": [
+                "cases in {country}",
+                "{country}"
+              ]
+            }
+          ],
+          "samples": [
+            "cases in {country}",
+            "{country}",
+            "count of corona cases in {country}",
+            "how many cases are there in {country}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CoronaByCountryIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "country",
+              "type": "AMAZON.Country",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.213732334008.972057904352"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.213732334008.972057904352",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what country you want the details for?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "7"
+}

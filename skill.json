@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:272073525239:function:92cf9fca-9df3-44bc-8043-1556b8a617e2:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {}
+      }
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Corona Reporter",
+          "summary": "Provides Details of Corona cases in every country",
+          "description": "Just ask \"how many cases are there in India?\" and it will provide details about the COVID-19 cases for a given country",
+          "examplePhrases": [
+            "Alexa open corona reporter",
+            "How many corona cases are there in India?",
+            "help"
+          ],
+          "keywords": [
+            "COVID-19",
+            "corona"
+          ]
+        },
+        "en-IN": {
+          "name": "Corona Reporter"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    }
+  }
+}
